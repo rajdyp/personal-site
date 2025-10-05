@@ -1,0 +1,57 @@
+name: Deploy Personal Website
+
+# WHEN TO RUN: Triggers the workflow on pushes to the main branch
+on:
+  push:
+    branches:
+      - main
+  # Optional: Allows manual runs from the GitHub Actions tab
+  workflow_dispatch:
+
+# Defines a single job named 'build'
+jobs:
+  build:
+    # Runs the job on the latest version of Ubuntu
+    runs-on: ubuntu-latest
+
+    # Permissions needed for the GitHub Pages deployment action
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python 3.x
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Step 4: Run the generator script to create docs/index.html
+      - name: Generate Static HTML
+        run: python generate.py
+
+      # Step 5: Configure GitHub Pages environment
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Step 6: Upload the generated docs/ folder as an artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # This is the directory that GitHub Pages will serve
+          path: 'docs'
+
+      # Step 7: Deploy the artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
