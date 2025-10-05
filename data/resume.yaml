@@ -1,0 +1,98 @@
+resume:
+  personal:
+    name: Rajdeep Rai
+    role: Site Reliability Engineer (SRE)
+    email: rajdyp@icloud.com
+    location: Santa Clara, CA (USA)
+    gender: male
+    social:
+      facebook: "#"
+      twitter: "#"
+      instagram: "#"
+      linkedin: "https://www.linkedin.com/in/rajdyprai"
+  
+  summary: "Site Reliability Engineer with experience in cloud-native migrations, distributed systems automation, and platform reliability. Proven track record in Kubernetes, AWS, and observability tooling to ensure system resiliency and performance at scale."
+  
+  experience:
+    - company: Apple (Contractor through TCS)
+      role: Site Reliability Engineer, Apple Pay
+      period: Jul 2022 - Present
+      location: Cupertino, CA
+      description: "In this role, I oversee the migration of Apple Pay services to the cloud, ensuring seamless integration with existing Apple services. Implement observability best practices by designing dashboards, alerts, and automated workflows, minimizing service disruptions and operational overhead. Partner with cross-functional teams to develop standardized onboarding processes, accelerating future migration initiatives. Additionally, led operational readiness and reliability for Apple Pay's expansion to third-party browsers, expanding user accessibility."
+    
+    - company: Apple (Contractor through TCS)
+      role: Site Reliability Engineer, Apple Maps
+      period: Jan 2020 - Jul 2022
+      location: Sunnyvale, CA
+      description: "Serving as an SRE for Apple Maps, I built and managed large-scale distributed data platforms utilizing Kafka, Zookeeper, Elasticsearch, and Redis. My responsibilities focused on maintaining high platform availability through proactive monitoring, automated failover systems, and zero-downtime platform upgrades. Additionally, automated infrastructure provisioning and configuration using Ansible, reducing manual effort and configuration errors in large-scale Linux environments."
+    
+    - company: AT&T (Contractor through Tech Mahindra)
+      role: Application Support Lead
+      period: Mar 2019 - Jan 2020
+      location: St. Louis, MO
+      description: "As the Application Support Lead, I led a support team that maintained operational excellence for over 40 critical business applications, implementing comprehensive monitoring and alerting to ensure high availability. This role involved partnering with development teams to drive incident response and root cause analysis while streamlining release cycles to improve service reliability. Additionally, developed disaster recovery procedures and conducted failover testing to ensure business continuity and minimize service downtime."
+    
+    - company: Tech Mahindra Ltd. (Client AT&T)
+      role: Sr. Linux System Administrator
+      period: Jan 2011 - Mar 2019
+      location: Noida, India
+      description: "In this position, I deployed and maintained Linux-based systems across AT&T data centers, prioritizing security, availability, and performance. My responsibilities included managing bare-metal servers, virtual machines in private cloud environments, coordinating OS patching and firmware upgrades, and specializing in high-availability setups with Veritas InfoScale. This approach ensured a robust, scalable, and fully optimized operating environment."
+  
+  education:
+    - institution: Sikkim Manipal University
+      degree: Master of Computer Applications (MCA)
+      year: "#"
+    
+    - institution: Kuvempu University
+      degree: Bachelor of Science (BSc) in Information Technology
+      year: "#"
+    
+    - institution: NIIT, New Delhi
+      degree: GNIIT program in Software Engineering
+      year: "#"
+  
+  skills:
+    cloud_infrastructure:
+      - Kubernetes
+      - AWS
+      - Istio
+      - Terraform
+      - Linux
+      - Docker
+    
+    programming:
+      - Python
+      - Bash
+    
+    monitoring:
+      - OpenTelemetry
+      - Prometheus
+      - Grafana
+      - Splunk
+      - Datadog
+    
+    data_platforms:
+      - Kafka
+      - Redis
+      - Elasticsearch
+      - Zookeeper
+    
+    devops:
+      - Git
+      - GitHub
+      - Spinnaker
+      - FluxCD
+      - Flagger
+    
+    ai_tools:
+      - Claude Code
+      - Gemini Code Assist
+  
+  certifications:
+    - name: AWS Certified Solutions Architect - Associate
+
+    - name: Red Hat Certified Engineer (RHCE)
+
+    - name: Cisco Certified Network Associate (CCNA) Routing & Switching
+
+    - name: ITIL V3 Foundation Certified
