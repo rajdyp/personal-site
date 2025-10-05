@@ -33,10 +33,12 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
+        working-directory: ${{ github.workspace }}
         run: pip install -r requirements.txt
 
       # Step 4: Run the generator script to create docs/index.html
       - name: Generate Static HTML
+        working-directory: ${{ github.workspace }}
         run: python generate.py
 
       # Step 5: Configure GitHub Pages environment
