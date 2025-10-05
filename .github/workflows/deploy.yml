@@ -39,7 +39,7 @@ jobs:
       # Step 4: Run the generator script to create docs/index.html
       - name: Generate Static HTML
         working-directory: ${{ github.workspace }}
-        run: python generate.py
+        run: python generator.py
 
       # Step 5: Configure GitHub Pages environment
       - name: Setup Pages
