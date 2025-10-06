@@ -1,6 +1,6 @@
 # 💻 Personal Website
 
-Welcome to my [personal website](https://rajdyp.github.io/personal-site/)! 
+Welcome to my [personal website](https://rajdyp.github.io/)! 
 
 ---
 
